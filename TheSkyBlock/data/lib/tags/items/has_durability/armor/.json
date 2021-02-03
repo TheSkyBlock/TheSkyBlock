@@ -1,0 +1,8 @@
+{
+    "values": [
+        "#lib:has_durability/armor/helmets",
+        "#lib:has_durability/armor/chestplates",
+        "#lib:has_durability/armor/leggings",
+        "#lib:has_durability/armor/boots"
+    ]
+}

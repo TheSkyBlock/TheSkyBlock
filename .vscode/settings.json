@@ -174,7 +174,7 @@
     ],
     "datapack.lint.selectorKeyQuoteType": null,
     "datapack.lint.selectorSortKeys": [
-        "information",
+        "warning",
         [
             "type",
             "gamemode",

@@ -1,0 +1,9 @@
+{
+    "values": [
+        "#lib:has_durability/tool/axes",
+        "#lib:has_durability/tool/hoes",
+        "#lib:has_durability/tool/pickaxes",
+        "#lib:has_durability/tool/shovels",
+        "#lib:has_durability/tool/swords"
+    ]
+}
