@@ -6,9 +6,12 @@
 # @within function asset:sacred_treasure/0204.spelunker_shoes/_.give
 
 # 移動とパーティクル
-    tp @s ^ ^ ^0.5
+    execute if block ^ ^ ^0.5 #lib:no_collusion run tp @s ^ ^ ^0.5
     particle minecraft:dust 0 1 0.25 1 ~ ~ ~ 0 0 0 0 1
     particle minecraft:dust 0.75 1 0.75 1 ~ ~ ~ 0 0 0 0 1
+
+# 正面が地形なら消滅
+    execute unless block ^ ^ ^0.5 #lib:no_collusion run kill @s
 
 # モブに接触
     execute positioned ~-0.5 ~-0.5 ~-0.5 if entity @e[type=#lib:living,type=!player,tag=!HurtEntity,dx=0] positioned ~0.5 ~0.5 ~0.5 run particle minecraft:crit ~ ~ ~ 0 0 0 0.5 10
