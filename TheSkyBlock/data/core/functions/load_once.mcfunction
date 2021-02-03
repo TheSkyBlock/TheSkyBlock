@@ -5,7 +5,7 @@
 # @within function core:load
 
 # バージョン情報
-data modify storage global Version set value "0.0.6"
+data modify storage global Version set value "0.0.7"
 tellraw @a [{"text": "Updated load version to ", "color": "green"},{"storage": "global","nbt":"Version","color": "aqua"}]
 
 # forceload chunks
@@ -42,12 +42,10 @@ data modify storage global Prefix.FAILED set value "§cFAILED >> §r"
 data modify storage global Prefix.ERROR set value "§cERROR >> §r"
 data modify storage global Prefix.CRIT set value "§4CRITICAL >> §r"
 
-#> Healthを持つMobにフィルターする際に使用してください
-#
-# **teamとしては存在しません**
-#
+#> NoCollision
 # @public
-    #declare team Null
+    team add NoCollision
+team modify NoCollision collisionRule never
 
 #> 1tickで消す一時変数の保存用
 # @public
