@@ -3,10 +3,10 @@
 #
 # テラブレードショットが飛んでいく際に使うfunction。緑色のビームだよ！
 #
-# @within function asset:sacred_treasure/0204.spelunker_shoes/_.give
+# @within function asset:sacred_treasure/0210.terra_blade/3.3.terra_shot_main
 
 # 移動とパーティクル
-    execute if block ^ ^ ^0.5 #lib:no_collusion run tp @s ^ ^ ^0.5
+    tp @s ^ ^ ^0.5
     particle minecraft:dust 0 1 0.25 1 ~ ~ ~ 0 0 0 0 1
     particle minecraft:dust 0.75 1 0.75 1 ~ ~ ~ 0 0 0 0 1
 
