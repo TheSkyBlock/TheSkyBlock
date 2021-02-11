@@ -8,3 +8,6 @@
     function asset:sacred_treasure/lib/use/offhand
 
 # ここから先は神器側の効果の処理を書く
+
+# 演出(相手生存時のみ)
+    execute at @e[type=#lib:living,type=!player,tag=HurtEntity,distance=..10,limit=1] run particle crit ~ ~0.25 ~ 0.3 0.5 0.3 0 15 force @a[distance=..30]
